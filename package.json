@@ -8,7 +8,7 @@
     "dev-force": "vite --force",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
-    "start": "npx http-server -P http://127.0.0.1:${PORT} ./dist"
+    "start": "node --max-old-space-size=256 ./node_modules/.bin/http-server -P http://127.0.0.1:${PORT} ./dist"
   },
   "engines": {
     "node": "20.x"
@@ -17,7 +17,7 @@
     "nanoid": "^5.0.7",
     "pinia": "^2.1.7",
     "shikwasa2": "^2.3.0",
-    "vconsole": "^3.15.1",
+
     "vue": "^3.4.21",
     "vue-router": "^4.3.0",
     "weixin-js-sdk-ts": "^1.6.1"
